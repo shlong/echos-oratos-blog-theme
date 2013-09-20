@@ -7,8 +7,8 @@
  * 'pages' on your WordPress site will use a different template.
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @subpackage EchosOratos
+ * @since EchosOratos 0.1
  */
 
 get_header(); ?>

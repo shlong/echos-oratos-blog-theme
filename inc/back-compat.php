@@ -7,15 +7,15 @@
  * many new functions and markup changes introduced in 3.6.
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @subpackage EchosOratos
+ * @since EchosOratos 0.1
  */
 
 /**
  * Prevent switching to Twenty Thirteen on old versions of WordPress. Switches
  * to the default theme.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */
@@ -30,7 +30,7 @@ add_action( 'after_switch_theme', 'twentythirteen_switch_theme' );
  * Prints an update nag after an unsuccessful attempt to switch to
  * Twenty Thirteen on WordPress versions prior to 3.6.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */
@@ -42,7 +42,7 @@ function twentythirteen_upgrade_notice() {
 /**
  * Prevents the Customizer from being loaded on WordPress versions prior to 3.6.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */
@@ -56,7 +56,7 @@ add_action( 'load-customize.php', 'twentythirteen_customize' );
 /**
  * Prevents the Theme Preview from being loaded on WordPress versions prior to 3.4.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */

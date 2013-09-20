@@ -4,8 +4,8 @@
  * See http://codex.wordpress.org/Custom_Headers
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @subpackage EchosOratos
+ * @since EchosOratos 0.1
  */
 
 /**
@@ -17,7 +17,7 @@
  * @uses twentythirteen_admin_header_image() to add custom markup to wp-admin form.
  * @uses register_default_headers() to set up the bundled header images.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  */
 function twentythirteen_custom_header_setup() {
 	$args = array(
@@ -64,7 +64,7 @@ add_action( 'after_setup_theme', 'twentythirteen_custom_header_setup' );
 /**
  * Loads our special font CSS files.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  */
 function twentythirteen_custom_header_fonts() {
 	// Add Open Sans and Bitter fonts.
@@ -80,7 +80,7 @@ add_action( 'admin_print_styles-appearance_page_custom-header', 'twentythirteen_
  *
  * get_header_textcolor() options: Hide text (returns 'blank'), or any hex value.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  */
 function twentythirteen_header_style() {
 	$header_image = get_header_image();
@@ -136,7 +136,7 @@ function twentythirteen_header_style() {
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  */
 function twentythirteen_admin_header_style() {
 	$header_image = get_header_image();
@@ -201,7 +201,7 @@ function twentythirteen_admin_header_style() {
  * Outputs markup to be displayed on the Appearance > Header admin panel.
  * This callback overrides the default markup displayed there.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  */
 function twentythirteen_admin_header_image() {
 	?>

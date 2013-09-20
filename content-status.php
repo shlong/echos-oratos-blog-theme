@@ -3,8 +3,8 @@
  * The template for displaying posts in the Status post format.
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @subpackage EchosOratos
+ * @since EchosOratos 0.1
  */
 ?>
 

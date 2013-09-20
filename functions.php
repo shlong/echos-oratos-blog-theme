@@ -20,8 +20,8 @@
  * see http://codex.wordpress.org/Plugin_API
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @subpackage EchosOratos
+ * @since EchosOratos 0.1
  */
 
 /**
@@ -53,7 +53,7 @@ if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
  * @uses register_nav_menu() To add support for a navigation menu.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */
@@ -110,7 +110,7 @@ add_action( 'after_setup_theme', 'twentythirteen_setup' );
  * The use of Source Sans Pro and Bitter by default is localized. For languages
  * that use characters not supported by the font, the font can be disabled.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return string Font stylesheet or empty string if disabled.
  */
@@ -151,7 +151,7 @@ function twentythirteen_fonts_url() {
 /**
  * Enqueues scripts and styles for front end.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */
@@ -187,7 +187,7 @@ add_action( 'wp_enqueue_scripts', 'twentythirteen_scripts_styles' );
  * Creates a nicely formatted and more specific title element text for output
  * in head of document, based on current view.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @param string $title Default title text for current view.
  * @param string $sep Optional separator.
@@ -218,7 +218,7 @@ add_filter( 'wp_title', 'twentythirteen_wp_title', 10, 2 );
 /**
  * Registers two widget areas.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */
@@ -249,7 +249,7 @@ if ( ! function_exists( 'twentythirteen_paging_nav' ) ) :
 /**
  * Displays navigation to next/previous set of posts when applicable.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */
@@ -282,7 +282,7 @@ if ( ! function_exists( 'twentythirteen_post_nav' ) ) :
 /**
  * Displays navigation to next/previous post when applicable.
 *
-* @since Twenty Thirteen 1.0
+* @since EchosOratos 0.1
 *
 * @return void
 */
@@ -315,7 +315,7 @@ if ( ! function_exists( 'twentythirteen_entry_meta' ) ) :
  *
  * Create your own twentythirteen_entry_meta() to override in a child theme.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */
@@ -355,7 +355,7 @@ if ( ! function_exists( 'twentythirteen_entry_date' ) ) :
  *
  * Create your own twentythirteen_entry_date() to override in a child theme.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @param boolean $echo Whether to echo the date. Default true.
  * @return string The HTML-formatted post date.
@@ -384,7 +384,7 @@ if ( ! function_exists( 'twentythirteen_the_attached_image' ) ) :
 /**
  * Prints the attached image with a link to the next attached image.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */
@@ -444,7 +444,7 @@ endif;
  *
  * Falls back to the post permalink if no URL is found in the post.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return string The Link format URL.
  */
@@ -463,7 +463,7 @@ function twentythirteen_get_link_url() {
  * 2. Active widgets in the sidebar to change the layout and spacing.
  * 3. When avatars are disabled in discussion settings.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @param array $classes A list of existing body class values.
  * @return array The filtered body class list.
@@ -485,7 +485,7 @@ add_filter( 'body_class', 'twentythirteen_body_class' );
 /**
  * Adjusts content_width value for video post formats and attachment templates.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @return void
  */
@@ -502,7 +502,7 @@ add_action( 'template_redirect', 'twentythirteen_content_width' );
 /**
  * Add postMessage support for site title and description for the Customizer.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  *
  * @param WP_Customize_Manager $wp_customize Customizer object.
  * @return void
@@ -518,7 +518,7 @@ add_action( 'customize_register', 'twentythirteen_customize_register' );
  * Binds JavaScript handlers to make Customizer preview reload changes
  * asynchronously.
  *
- * @since Twenty Thirteen 1.0
+ * @since EchosOratos 0.1
  */
 function twentythirteen_customize_preview_js() {
 	wp_enqueue_script( 'twentythirteen-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
