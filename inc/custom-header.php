@@ -26,8 +26,8 @@ function twentythirteen_custom_header_setup() {
 		'default-image'          => '%s/images/headers/circle.png',
 
 		// Set height and width, with a maximum value for the width.
-		'height'                 => 230,
-		'width'                  => 1600,
+		'height'                 => 125,
+		'width'                  => 610,
 
 		// Callbacks for styling the header and the admin preview.
 		'wp-head-callback'       => 'twentythirteen_header_style',
@@ -98,7 +98,7 @@ function twentythirteen_header_style() {
 	?>
 		.site-header {
 			background: url(<?php header_image(); ?>) no-repeat scroll top;
-			background-size: 1600px auto;
+			background-size: 610px auto;
 		}
 	<?php
 		endif;
@@ -149,7 +149,7 @@ function twentythirteen_admin_header_style() {
 		box-sizing:         border-box;
 		<?php
 		if ( ! empty( $header_image ) ) {
-			echo 'background: url(' . esc_url( $header_image ) . ') no-repeat scroll top; background-size: 1600px auto;';
+			echo 'background: url(' . esc_url( $header_image ) . ') no-repeat scroll top; background-size: 610px auto;';
 		} ?>
 		padding: 0 20px;
 	}
@@ -205,7 +205,7 @@ function twentythirteen_admin_header_style() {
  */
 function twentythirteen_admin_header_image() {
 	?>
-	<div id="headimg" style="background: url(<?php header_image(); ?>) no-repeat scroll top; background-size: 1600px auto;">
+	<div id="headimg" style="background: url(<?php header_image(); ?>) no-repeat scroll top; background-size: 610px auto;">
 		<?php $style = ' style="color:#' . get_header_textcolor() . ';"'; ?>
 		<div class="home-link">
 			<h1 class="displaying-header-text"><a id="name"<?php echo $style; ?> onclick="return false;" href="#"><?php bloginfo( 'name' ); ?></a></h1>
