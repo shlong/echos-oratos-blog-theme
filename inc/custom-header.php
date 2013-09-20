@@ -23,7 +23,7 @@ function twentythirteen_custom_header_setup() {
 	$args = array(
 		// Text color and image (empty to use none).
 		'default-text-color'     => '220e10',
-		'default-image'          => '%s/images/headers/circle.png',
+		'default-image'          => '%s/images/headers/lettering.png',
 
 		// Set height and width, with a maximum value for the width.
 		'height'                 => 125,
@@ -42,20 +42,10 @@ function twentythirteen_custom_header_setup() {
 	 * %s is a placeholder for the theme template directory URI.
 	 */
 	register_default_headers( array(
-		'circle' => array(
-			'url'           => '%s/images/headers/circle.png',
-			'thumbnail_url' => '%s/images/headers/circle-thumbnail.png',
-			'description'   => _x( 'Circle', 'header image description', 'twentythirteen' )
-		),
-		'diamond' => array(
-			'url'           => '%s/images/headers/diamond.png',
-			'thumbnail_url' => '%s/images/headers/diamond-thumbnail.png',
-			'description'   => _x( 'Diamond', 'header image description', 'twentythirteen' )
-		),
-		'star' => array(
-			'url'           => '%s/images/headers/star.png',
-			'thumbnail_url' => '%s/images/headers/star-thumbnail.png',
-			'description'   => _x( 'Star', 'header image description', 'twentythirteen' )
+		'lettering' => array(
+			'url'           => '%s/images/headers/lettering.png',
+			'thumbnail_url' => '%s/images/headers/lettering-thumbnail.png',
+			'description'   => 'plain old lettering'
 		),
 	) );
 }
@@ -158,10 +148,10 @@ function twentythirteen_admin_header_style() {
 		-moz-box-sizing:    border-box;
 		box-sizing:         border-box;
 		margin: 0 auto;
-		max-width: 1040px;
+		max-width: 610px;
 		<?php
 		if ( ! empty( $header_image ) || display_header_text() ) {
-			echo 'min-height: 230px;';
+			echo 'min-height: 125px;';
 		} ?>
 		width: 100%;
 	}
@@ -176,7 +166,7 @@ function twentythirteen_admin_header_style() {
 	#headimg h1 {
 		font: bold 60px/1 Bitter, Georgia, serif;
 		margin: 0;
-		padding: 58px 0 10px;
+		padding: 0 0 10px;
 	}
 	#headimg h1 a {
 		text-decoration: none;
