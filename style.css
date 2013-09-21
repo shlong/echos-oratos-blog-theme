@@ -159,23 +159,81 @@ body {
 }
 
 /* }}} NAV LAYOUT */
-/* {{{ STYLING */
-
+/* {{{ PAGE STYLING */
 
 #navbar {
-
     border : 3px solid black;
     border-width : 3px 0;
-
 }
-
 
 #secondary {
-
     border-top : 3px solid black;
-
 }
 
-
 /* }}} */
+/* {{{ NAV STYLING */
+
+#navbar a,
+#navbar a:visited {
+    font : normal 26px "IM FELL DW Pica SC", serif;
+    text-decoration : none ! important;
+    color : black;
+    display : block;
+    padding : 4px 10px;
+    transition : color 0.16s linear;
+}
+
+#navbar .sub-menu a,
+#navbar .sub-menu a:visited {
+    font-size : 22px;
+}
+
+#navbar .sub-menu {
+    padding-top : 3px;
+    background-color : white;
+    border : 1px solid black;
+    border-width : 0 1px 3px;
+}
+
+/* {{{ HOVER EFFECT */
+
+/* current menu item is slightly lighter */
+#navbar .current-menu-item a {
+    color : #555;
+}
+
+/* sub-menu items of current item should stay black */
+#navbar .current-menu-item .sub-menu a {
+    color : black;
+}
+
+/* on hover over the navbar itself, all points should get really light */
+#navbar:hover a {
+    color : #AAA;
+}
+
+/* but on hover the current point should stay slighty lighter */
+#navbar:hover .current-menu-item a {
+    color : #777;
+}
+
+/* but again, submenu items should stay in main color */
+#navbar:hover .menu-item .sub-menu a {
+    color : #AAA;
+}
+
+/* but on hover the current point should stay slighty lighter, even sub-menu */
+#navbar:hover .sub-menu .current-menu-item a {
+    color : #777;
+}
+
+/* the actually hovered element should get full color */
+#navbar .menu-item:hover a,
+#navbar .sub-menu .menu-item:hover a {
+    color : black;
+}
+
+/* }}} HOVER EFFECT */
+
+/* }}} NAV STYLING */
 
