@@ -89,7 +89,8 @@ body {
 
 #navbar,
 #main,
-#secondary {
+#secondary,
+#colophon .navigation {
 
     /* main content width */
     width : 600px;
