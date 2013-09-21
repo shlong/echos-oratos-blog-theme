@@ -40,13 +40,6 @@ body {
 
 }
 
-body.admin-bar {
-
-    /* reverse margin from the admin-bar */
-    margin-top : -28px;
-
-}
-
 
 #page {
 

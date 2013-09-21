@@ -28,6 +28,12 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+    <style>
+        /* stop breaking my sticky footer dump wordpress!!1 */
+        html, body {
+            margin-top : 0 ! important;
+        }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>
