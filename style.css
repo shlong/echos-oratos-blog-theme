@@ -14,7 +14,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* {{{ LAYOUT */
+/* {{{ PAGE LAYOUT */
 
 
 html, body {
@@ -120,7 +120,45 @@ body {
 }
 
 
-/* }}} LAYOUT */
+/* }}} PAGE LAYOUT */
+/* {{{ NAV LAYOUT */
+
+.clear {
+    clear : both;
+}
+
+#navbar ul {
+    list-style : none;
+    padding : 0;
+    margin : 0;
+}
+
+#navbar .nav-menu {
+    position : relative;
+}
+
+#navbar .sub-menu {
+    position : absolute;
+    display : none;
+}
+
+#navbar .menu-item:hover .sub-menu {
+    display : block;
+}
+
+#navbar .menu-item:last-of-type {
+    float : right;
+}
+
+#navbar .menu-item {
+    float : left;
+}
+
+#navbar .sub-menu .menu-item {
+    float : none;
+}
+
+/* }}} NAV LAYOUT */
 /* {{{ STYLING */
 
 
