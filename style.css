@@ -162,6 +162,15 @@ body {
 /* }}} NAV LAYOUT */
 /* {{{ PAGE STYLING */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family : "IM FELL DW Pica SC", serif;
+}
+
 #navbar {
     border : 3px solid black;
     border-width : 3px 0;
@@ -177,20 +186,30 @@ body {
 #navbar a,
 #navbar a:visited {
     font : normal 26px "IM FELL DW Pica SC", serif;
+    text-transform : lowercase;
     text-decoration : none ! important;
     color : black;
     display : block;
     padding : 4px 10px;
     transition : color 0.16s linear;
+
+    /* adjust for lowercase */
+    line-height : 16px;
+    padding-bottom : 9px;
+
 }
 
 #navbar .sub-menu a,
 #navbar .sub-menu a:visited {
     font-size : 22px;
+
+    /* adjust for lowercase */
+    line-height : 10px;
+    padding-bottom : 10px;
+
 }
 
 #navbar .sub-menu {
-    padding-top : 3px;
     background-color : white;
     border : 1px solid black;
     border-width : 0 1px 3px;
@@ -199,7 +218,8 @@ body {
 /* {{{ HOVER EFFECT */
 
 /* current menu item is slightly lighter */
-#navbar .current-menu-item a {
+#navbar .current-menu-item a,
+#navbar .current-menu-ancestor a {
     color : #555;
 }
 
@@ -229,8 +249,8 @@ body {
 }
 
 /* the actually hovered element should get full color */
-#navbar .menu-item:hover a,
-#navbar .sub-menu .menu-item:hover a {
+#navbar .menu-item a:hover,
+#navbar .sub-menu .menu-item a:hover {
     color : black;
 }
 

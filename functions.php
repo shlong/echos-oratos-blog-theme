@@ -168,6 +168,9 @@ function twentythirteen_scripts_styles() {
 	// Loads JavaScript file with functionality specific to Twenty Thirteen.
 	wp_enqueue_script( 'twentythirteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2013-07-18', true );
 
+    // Add IM_FELL_DW_Pica_SC font
+    wp_enqueue_style( 'header-font', get_template_directory_uri() . '/fonts/IM_FELL_DW_Pica_SC.css', array() );
+
 	// Add Open Sans and Bitter fonts, used in the main stylesheet.
 	wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
 
