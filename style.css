@@ -350,6 +350,9 @@ h6 a:visited {
 /* }}} CONTENT STYLING */
 /* {{{ FOOTER STYLING */
 
+#colophon {
+    overflow : hidden;
+}
 #colophon .navigation {
     padding : 10px 0;
 }
