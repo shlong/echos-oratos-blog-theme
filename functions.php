@@ -385,7 +385,7 @@ if ( ! function_exists( 'twentythirteen_the_attached_image' ) ) :
  */
 function twentythirteen_the_attached_image() {
 	$post                = get_post();
-	$attachment_size     = apply_filters( 'twentythirteen_attachment_size', array( 724, 724 ) );
+	$attachment_size     = apply_filters( 'twentythirteen_attachment_size', array( 600, 600 ) );
 	$next_attachment_url = wp_get_attachment_url();
 
 	/**
@@ -488,9 +488,9 @@ function twentythirteen_content_width() {
 	global $content_width;
 
 	if ( is_attachment() )
-		$content_width = 724;
+		$content_width = 600;
 	elseif ( has_post_format( 'audio' ) )
-		$content_width = 484;
+		$content_width = 600;
 }
 add_action( 'template_redirect', 'twentythirteen_content_width' );
 
