@@ -185,6 +185,25 @@ h4,
 h5,
 h6 {
     font-family : "IM FELL DW Pica SC", serif;
+    margin : 0;
+    padding : 0;
+    font-weight : normal;
+}
+h1 a,
+h1 a:visited,
+h2 a,
+h2 a:visited,
+h3 a,
+h3 a:visited,
+h4 a,
+h4 a:visited,
+h5 a,
+h5 a:visited,
+h6 a,
+h6 a:visited {
+    color : black;
+    text-decoration : none;
+    font-weight : normal;
 }
 
 #navbar {
@@ -281,33 +300,6 @@ h6 {
 
 /* {{{ HEADERS */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin : 0;
-    padding : 0;
-    font-weight : normal;
-}
-h1 a,
-h1 a:visited,
-h2 a,
-h2 a:visited,
-h3 a,
-h3 a:visited,
-h4 a,
-h4 a:visited,
-h5 a,
-h5 a:visited,
-h6 a,
-h6 a:visited {
-    color : black;
-    text-decoration : none;
-    font-weight : normal;
-}
-
 #content header.archive-header {
     display : none;
 }
@@ -321,6 +313,30 @@ h6 a:visited {
 }
 
 /* }}} HEADERS */
+/* {{{ FOOTER */
+
+#content footer.entry-meta {
+    word-spacing : -1em;
+}
+#content footer.entry-meta span {
+    word-spacing : 0;
+}
+#content footer.entry-meta,
+#content footer.entry-meta a {
+    color : #808080;
+}
+#content footer.entry-meta span::after {
+    content : "|";
+    padding : 0 5px;
+}
+#content footer.entry-meta span:last-child::after {
+    content : "";
+}
+#content footer.entry-meta .categories-links::before {
+    content : "Category: ";
+}
+
+/* }}} FOOTER */
 
 #content article.post {
     margin : 20px 0 40px;
