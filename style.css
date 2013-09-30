@@ -348,4 +348,40 @@ h6 a:visited {
 }
 
 /* }}} CONTENT STYLING */
+/* {{{ FOOTER STYLING */
+
+#colophon .navigation {
+    padding : 10px 0;
+}
+#colophon .navigation h1 {
+    display : none;
+}
+#colophon .navigation .nav-links {
+    overflow : hidden;
+}
+#colophon .navigation .nav-links .nav-previous {
+    display : inline;
+}
+#colophon .navigation .nav-links .nav-next {
+    float : right;
+}
+#colophon .navigation .nav-links a {
+    font-size : 14px;
+    color : #808080;
+}
+
+#colophon #secondary:first-child {
+    margin-top : 39px;
+}
+
+#colophon .credits {
+    float : right;
+}
+#colophon .credits {
+    font-size : 12px;
+    color : #808080;
+    margin : 8px 0;
+}
+
+/* }}} FOOTER STYLING */
 
