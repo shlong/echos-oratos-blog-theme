@@ -16,7 +16,6 @@
 	</div><!-- #page -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-        <?php if ( is_single() ) twentythirteen_post_nav(); ?>
         <?php twentythirteen_paging_nav(); ?>
 		<?php get_sidebar( 'main' ); ?>
 		<div class="site-info">
