@@ -14,6 +14,7 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
+            <div class="category-preview">
 <?php
 
 $this_post_id = get_post()->ID;
@@ -42,15 +43,24 @@ foreach($categories as $category) {
 
     # get custom field
     $image_id = $custom_fields['preview-' . $category[0]->slug][0];
+    $name = $category[0]->name;
+    $url = $category[1];
 
     # if custom field is set, print a link to the cat with set thumbnail
     if (isset($image_id)) {
-        print('<a href="' . $category[1] . '">' . wp_get_attachment_image($image_id) . '</a>');
+
+?>
+                <a href="<?php print($url); ?>">
+                    <span class="name"><?php print($name); ?></span>
+                    <?php print(wp_get_attachment_image($image_id)); ?>
+                </a>
+<?php
     }
 
 }
 
 ?>
+            </div>
 		</div>
 	</div>
 <?php get_footer(); ?>

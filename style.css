@@ -347,6 +347,45 @@ h6 a:visited {
     border-top : 1px dotted #808080;
 }
 
+/* {{{ CATEGORY-PREVIEW */
+
+#content .category-preview {
+    text-align : center;
+    margin : 60px 40px;
+}
+#content .category-preview a {
+    position : relative;
+    overflow : hidden;
+    display : inline-block;
+    overflow : hidden;
+    margin : 20px;
+    border : 2px solid black;
+}
+#content .category-preview a .name {
+    position : absolute;
+    left : 0;
+    text-align : center;
+    width : 100%;
+    line-height : 3em;
+    background-color : rgba(200, 200, 200, 0.8);
+    font-size : 1.1em;
+    font-weight : normal;
+    opacity : 0;
+    bottom : -20px;
+    transition :
+        bottom 0.2s linear,
+        opacity 0.3s linear;
+}
+#content .category-preview a:hover .name {
+    opacity : 1;
+    bottom : 0;
+}
+#content .category-preview a img {
+    vertical-align: middle;
+}
+
+/* }}} */
+
 /* }}} CONTENT STYLING */
 /* {{{ FOOTER STYLING */
 
