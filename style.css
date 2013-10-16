@@ -388,3 +388,98 @@ h6 a:visited {
 
 /* }}} FOOTER STYLING */
 
+/* {{{ FORM LAYOUT */
+
+.wpcf7-form div {
+    position : relative;
+}
+
+.wpcf7-form label {
+    position : absolute;
+    right : 0;
+    z-index : 10;
+}
+
+.wpcf7-form-control-wrap {
+    width : 100%;
+    display : block;
+}
+
+.wpcf7-form-control-wrap input,
+.wpcf7-form-control-wrap textarea {
+    position : relative;
+    width : 100%;
+    border : 0;
+}
+
+/* }}} FORM LAYOUT */
+/* {{{ FORM STYLING */
+
+.wpcf7-form div {
+    margin : 10px 0;
+}
+
+.wpcf7-form label {
+    font-size : 14px;
+    color : #808080;
+}
+
+.wpcf7-form label,
+.wpcf7-form-control-wrap input,
+.wpcf7-form-control-wrap textarea {
+    background-color : #ECECEC;
+}
+
+.wpcf7-form-control-wrap input,
+.wpcf7-form-control-wrap textarea {
+    font-size : 16px;
+    font-family : "Open Sans", sans-serif;
+    box-sizing : border-box;
+    -moz-box-sizing : border-box;
+}
+
+.wpcf7-form label,
+.wpcf7-form-control-wrap input {
+    padding : 0 5px;
+    line-height : 32px;
+    height : 32px;
+}
+
+.wpcf7-form-control-wrap textarea {
+    padding : 5px;
+    line-height : 20px;
+    min-width : 100%;
+    max-width : 100%;
+}
+
+/* {{{ FANCY HOVER/FOCUS FOO */
+
+.wpcf7-form label {
+    transition :
+        opacity 0.2s linear;
+}
+.wpcf7-form div:hover label {
+    opacity : 0;
+}
+
+.wpcf7-form-control-wrap input,
+.wpcf7-form-control-wrap textarea {
+    z-index : 9;
+    transition :
+        background-color 0.2s linear;
+}
+
+.wpcf7-form-control-wrap input:hover,
+.wpcf7-form-control-wrap textarea:hover,
+.wpcf7-form-control-wrap input:focus,
+.wpcf7-form-control-wrap textarea:focus {
+    z-index : 11;
+    transition :
+        background-color 0.2s linear,
+        z-index 0s linear 0.3s;
+}
+
+/* }}} FANCY HOVER/FOCUS FOO */
+
+/* }}} FORM STYLING */
+
