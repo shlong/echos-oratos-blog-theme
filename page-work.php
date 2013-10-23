@@ -49,10 +49,12 @@ foreach($categories as $category) {
     # if custom field is set, print a link to the cat with set thumbnail
     if (isset($image_id)) {
 
+        $image = wp_get_attachment_image_src($image_id, 'full');
+
 ?>
                 <a href="<?php print($url); ?>">
                     <span class="name"><?php print($name); ?></span>
-                    <?php print(wp_get_attachment_image($image_id)); ?>
+                    <img src="<?php echo $image[0]; ?>" width="<?php echo $image[1]; ?>" height="<?php echo $image[2]; ?>">
                 </a>
 <?php
     }

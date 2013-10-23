@@ -351,34 +351,48 @@ h6 a:visited {
 
 #content .category-preview {
     text-align : center;
-    margin : 60px 40px;
+    margin : 60px 0;
 }
 #content .category-preview a {
     position : relative;
     overflow : hidden;
     display : inline-block;
     overflow : hidden;
-    margin : 20px;
-    border : 2px solid black;
+    /*border : 2px solid black;*/
+    margin-bottom : 20px;
+}
+#content .category-preview a:nth-child(1n+3) {
+    margin-top : 20px;
+}
+#content .category-preview a:nth-child(odd) {
+    margin-right : 20px;
+    float : left;
+}
+#content .category-preview a:nth-child(even) {
+    margin-left : 20px;
+    float : right;
 }
 #content .category-preview a .name {
+    font-family : "IM FELL DW Pica SC", serif;
+    text-transform : lowercase;
+    font-size : 26px;
     position : absolute;
     left : 0;
     text-align : center;
     width : 100%;
-    line-height : 3em;
+    line-height : 36px;
+    padding-bottom : 30px;
     background-color : rgba(200, 200, 200, 0.8);
-    font-size : 1.1em;
     font-weight : normal;
-    opacity : 0;
-    bottom : -20px;
+    opacity : 1;
+    bottom : 0;
     transition :
         bottom 0.2s linear,
         opacity 0.3s linear;
 }
 #content .category-preview a:hover .name {
-    opacity : 1;
-    bottom : 0;
+    opacity : 0;
+    bottom : -20px;
 }
 #content .category-preview a img {
     vertical-align: middle;
