@@ -14,7 +14,7 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-            <div class="category-preview">
+            <article id="page-work post-<?php the_ID(); ?>" <?php post_class('category-preview no-header'); ?>>
 <?php
 
 $this_post_id = get_post()->ID;
@@ -62,7 +62,10 @@ foreach($categories as $category) {
 }
 
 ?>
-            </div>
+				<footer class="entry-meta">
+					<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+				</footer><!-- .entry-meta -->
+			</article>
 		</div>
 	</div>
 <?php get_footer(); ?>
