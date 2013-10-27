@@ -470,23 +470,33 @@ h6 a:visited {
 /* }}} FORM LAYOUT */
 /* {{{ FORM STYLING */
 
+.wpcf7-form {
+    overflow : hidden;
+    clear : both;
+}
+
 .wpcf7-form div {
-    margin : 10px 0;
+    margin-bottom : 10px;
 }
 
 .wpcf7-form label {
     font-size : 14px;
-    color : #808080;
+    color : #666;
+    cursor : text;
 }
 
 .wpcf7-form label,
 .wpcf7-form-control-wrap input,
-.wpcf7-form-control-wrap textarea {
-    background-color : #ECECEC;
+.wpcf7-form-control-wrap textarea,
+.wpcf7-form input.wpcf7-submit {
+    background-color : #ececec;
+    transition :
+        background-color 0.2s linear;
 }
 
 .wpcf7-form-control-wrap input,
-.wpcf7-form-control-wrap textarea {
+.wpcf7-form-control-wrap textarea,
+.wpcf7-form input.wpcf7-submit {
     font-size : 16px;
     font-family : "Open Sans", sans-serif;
     box-sizing : border-box;
@@ -494,7 +504,8 @@ h6 a:visited {
 }
 
 .wpcf7-form label,
-.wpcf7-form-control-wrap input {
+.wpcf7-form-control-wrap input,
+.wpcf7-form input.wpcf7-submit {
     padding : 0 5px;
     line-height : 32px;
     height : 32px;
@@ -505,6 +516,31 @@ h6 a:visited {
     line-height : 20px;
     min-width : 100%;
     max-width : 100%;
+}
+
+.wpcf7-form .submit-wrap {
+    position : relative;
+}
+.wpcf7-form .submit-wrap .ajax-loader {
+    position : absolute;
+    right : 5px;
+    top : 7px;
+}
+.wpcf7-form input.wpcf7-submit {
+    font-size : 14px;
+    padding-bottom : 2px;
+    height : 32px;
+    border : 0;
+    color : #666;
+    width : 120px;
+    transition :
+        background-color 0.2s linear,
+        color 0.2s linear;
+}
+.wpcf7-form input.wpcf7-submit:hover,
+.wpcf7-form input.wpcf7-submit:active {
+    background-color : #ddd;
+    color : black;
 }
 
 /* {{{ FANCY HOVER/FOCUS FOO */
@@ -529,6 +565,7 @@ h6 a:visited {
 .wpcf7-form-control-wrap input:focus,
 .wpcf7-form-control-wrap textarea:focus {
     z-index : 11;
+    background-color : #ddd;
     transition :
         background-color 0.2s linear,
         z-index 0s linear 0.3s;
@@ -537,4 +574,23 @@ h6 a:visited {
 /* }}} FANCY HOVER/FOCUS FOO */
 
 /* }}} FORM STYLING */
+/* {{{ CONTACT FORM STYLING */
 
+#wpcf7-f16-p14-o1 input.wpcf7-submit {
+    float : right;
+}
+
+/* }}} CONTACT FORM STYLING */
+/* {{{ NEWSLETTER FORM STYLING */
+
+#wpcf7-f18-p153-o1 .input-wrap,
+#wpcf7-f18-p14-o2 .input-wrap {
+    width : 470px;
+    float : left;
+}
+#wpcf7-f18-p153-o1 .submit-wrap,
+#wpcf7-f18-p14-o2 .submit-wrap {
+    float : right;
+}
+
+/* }}} NEWSLETTER FORM STYLING */
