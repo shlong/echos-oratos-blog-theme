@@ -328,6 +328,8 @@ h6 a:visited {
 }
 #content article.post:nth-of-type(1n+2) {
     border-top : 1px dotted #808080;
+    margin-top : 60px;
+    padding-top : 50px;
 }
 
 /* set margin for p tags */
@@ -361,6 +363,8 @@ h6 a:visited {
 #content footer.entry-meta span {
     word-spacing : 0;
 }
+
+
 #content footer.entry-meta,
 #content footer.entry-meta a {
     color : #808080;
@@ -371,9 +375,6 @@ h6 a:visited {
 }
 #content footer.entry-meta span:last-child::after {
     content : "";
-}
-#content footer.entry-meta .categories-links::before {
-    content : "Category: ";
 }
 
 /* }}} FOOTER */
