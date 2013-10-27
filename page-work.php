@@ -14,7 +14,7 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-            <article id="page-work post-<?php the_ID(); ?>" <?php post_class('category-preview no-header'); ?>>
+            <article id="page-work" <?php post_class('category-preview no-header'); ?>>
 <?php
 
 $this_post_id = get_post()->ID;

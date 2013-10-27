@@ -622,3 +622,10 @@ h6 a:visited {
 
 /* }}} NEWSLETTER FORM STYLING */
 
+/* {{{ PAGE-WORK STYLING */
+
+#page-work img {
+    border : 0;
+}
+
+/* }}} */
