@@ -163,8 +163,8 @@ body {
 /* {{{ PAGE STYLING */
 
 html {
-    font-family : "Open Sans", sans-serif;
-    font-size : 13px;
+    font-family : "Source Sans Pro", sans-serif;
+    font-size : 14px;
 }
 
 a,
@@ -524,7 +524,7 @@ h6 a:visited {
 .wpcf7-form-control-wrap textarea,
 .wpcf7-form input.wpcf7-submit {
     font-size : 16px;
-    font-family : "Open Sans", sans-serif;
+    font-family : "Source Sans Pro", sans-serif;
     box-sizing : border-box;
     -moz-box-sizing : border-box;
 }
