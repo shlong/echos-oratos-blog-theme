@@ -294,9 +294,11 @@ h6 a:visited {
 /* }}} NAV STYLING */
 /* {{{ CONTENT STYLING */
 
+/*
 #content {
     overflow : hidden;
 }
+*/
 
 /* {{{ HEADERS */
 
@@ -386,7 +388,6 @@ h6 a:visited {
     position : relative;
     overflow : hidden;
     display : inline-block;
-    overflow : hidden;
     /*border : 2px solid black;*/
     margin-bottom : 20px;
 }
@@ -497,7 +498,6 @@ h6 a:visited {
 /* {{{ FORM STYLING */
 
 .wpcf7-form {
-    overflow : hidden;
     clear : both;
 }
 
@@ -511,11 +511,19 @@ h6 a:visited {
     cursor : text;
 }
 
-.wpcf7-form label,
+.wpcf7-form label {
+    background-color : white;
+}
+.wpcf7-form .textarea-wrap label {
+    margin-top : 1px;
+    line-height : 30px;
+    height : 30px;
+}
+
 .wpcf7-form-control-wrap input,
 .wpcf7-form-control-wrap textarea,
 .wpcf7-form input.wpcf7-submit {
-    background-color : #ececec;
+    /*background-color : #ececec;*/
     transition :
         background-color 0.2s linear;
 }
@@ -523,6 +531,7 @@ h6 a:visited {
 .wpcf7-form-control-wrap input,
 .wpcf7-form-control-wrap textarea,
 .wpcf7-form input.wpcf7-submit {
+    outline : 1px dotted #888;
     font-size : 16px;
     font-family : "Source Sans Pro", sans-serif;
     box-sizing : border-box;
@@ -535,6 +544,9 @@ h6 a:visited {
     padding : 0 5px;
     line-height : 32px;
     height : 32px;
+}
+.wpcf7-form label {
+    padding : 0 10px;
 }
 
 .wpcf7-form-control-wrap textarea {
@@ -559,13 +571,14 @@ h6 a:visited {
     border : 0;
     color : #666;
     width : 120px;
+    background-color : transparent;
     transition :
         background-color 0.2s linear,
         color 0.2s linear;
 }
 .wpcf7-form input.wpcf7-submit:hover,
 .wpcf7-form input.wpcf7-submit:active {
-    background-color : #ddd;
+    /*background-color : #ddd;*/
     color : black;
 }
 
@@ -591,15 +604,62 @@ h6 a:visited {
 .wpcf7-form-control-wrap input:focus,
 .wpcf7-form-control-wrap textarea:focus {
     z-index : 11;
-    background-color : #ddd;
+    /*background-color : #ddd;*/
     transition :
         background-color 0.2s linear,
         z-index 0s linear 0.3s;
+}
+.wpcf7-form input.wpcf7-submit:hover,
+.wpcf7-form-control-wrap input:focus,
+.wpcf7-form-control-wrap textarea:focus {
+    outline-style : solid;
 }
 
 /* }}} FANCY HOVER/FOCUS FOO */
 
 /* }}} FORM STYLING */
+/* {{{ FORM ERROR STYLING */
+
+.input-wrap .wpcf7-form-control-wrap,
+.textarea-wrap .wpcf7-form-control-wrap {
+    position : relative;
+}
+
+.input-wrap .wpcf7-not-valid-tip,
+.textarea-wrap .wpcf7-not-valid-tip {
+    position : absolute;
+    top : 0;
+    right : 101%;
+    left : auto;
+    text-align : right;
+    line-height : 32px;
+    border : 0;
+    padding : 0 10px;
+}
+
+#content .wpcf7-response-output {
+    padding : 20px;
+    margin : 0;
+    background-color : white;
+    border : 1px solid #888;
+    border-top-width : 0;
+    font-size : 24px;
+    line-height : 48px;
+    position : fixed;
+    top : 0;
+    left : 50%;
+    margin-left : -330px;
+    width : 620px;
+    text-align : center;
+    z-index : 10000;
+}
+
+.wpcf7-form .wpcf7-not-valid {
+    outline-style : dashed;
+    outline-color : red;
+}
+
+/* }}} */
 /* {{{ CONTACT FORM STYLING */
 
 #wpcf7-f16-p14-o1 input.wpcf7-submit {
@@ -608,6 +668,10 @@ h6 a:visited {
 
 /* }}} CONTACT FORM STYLING */
 /* {{{ NEWSLETTER FORM STYLING */
+
+#page-contact p {
+    clear : both;
+}
 
 #wpcf7-f18-p153-o1 .input-wrap,
 #wpcf7-f18-p14-o2 .input-wrap {
