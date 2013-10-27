@@ -306,7 +306,7 @@ h6 a:visited {
 }
 
 #content header.entry-header {
-    margin : 10px 0;
+    margin : 10px 0 20px;
     font-size : 16px;
 }
 #content header.entry-header a {
@@ -314,9 +314,48 @@ h6 a:visited {
 }
 
 /* }}} HEADERS */
+/* {{{ CONTENT */
+
+/* for no-header pages, make moar room on the top */
+#content article.no-header {
+    margin-top : 60px;
+}
+
+/* dotted line between posts */
+#content article.post {
+    margin : 20px 0 40px;
+    padding : 20px 0 0;
+}
+#content article.post:nth-of-type(1n+2) {
+    border-top : 1px dotted #808080;
+}
+
+/* set margin for p tags */
+#content article .entry-content p {
+    margin : 10px 0;
+}
+
+/* reposition read-moar link */
+#content article .entry-content a.more-link {
+    margin-top : 20px;
+    float : right;
+}
+
+/* max size for inline images */
+#content article img {
+    max-width : 100%;
+    height : auto;
+}
+
+/* }}} */
 /* {{{ FOOTER */
 
 #content footer.entry-meta {
+
+    /* adjustments for moar-link */
+    margin-top : 30px;
+    width : 460px;
+
     word-spacing : -1em;
 }
 #content footer.entry-meta span {
@@ -338,19 +377,6 @@ h6 a:visited {
 }
 
 /* }}} FOOTER */
-
-#content article.post {
-    margin : 20px 0 40px;
-    padding : 20px 0 0;
-}
-#content article.post:nth-of-type(1n+2) {
-    border-top : 1px dotted #808080;
-}
-
-#content article.no-header {
-    margin-top : 60px;
-}
-
 /* {{{ CATEGORY-PREVIEW */
 
 #content .category-preview {
@@ -594,3 +620,4 @@ h6 a:visited {
 }
 
 /* }}} NEWSLETTER FORM STYLING */
+
