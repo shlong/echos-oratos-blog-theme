@@ -250,12 +250,29 @@ h6 a:visited {
     z-index : 999;
 }
 
+/* {{{ FEED ICON */
+
+#navbar #menu-item-38 a {
+    padding-left : 20px;
+    padding-right : 20px;
+    font-size : 0px;
+    display : block;
+    background-image : url(images/feed-icon-nav.png);
+    background-repeat : no-repeat;
+    background-position : center center;
+    transition : opacity 0.2s linear;
+}
+
+/* }}} */
 /* {{{ HOVER EFFECT */
 
 /* current menu item is slightly lighter */
 #navbar .current-menu-item a,
 #navbar .current-menu-ancestor a {
     color : #555;
+}
+#navbar #menu-item-38.current-menu-item a {
+    opacity : 0.75;
 }
 
 /* sub-menu items of current item should stay black */
@@ -267,10 +284,16 @@ h6 a:visited {
 #navbar:hover a {
     color : #AAA;
 }
+#navbar:hover #menu-item-38 a {
+    opacity : 0.25;
+}
 
 /* but on hover the current point should stay slighty lighter */
 #navbar:hover .current-menu-item a {
     color : #777;
+}
+#navbar:hover #menu-item-38.current-menu-item a {
+    opacity : 0.5;
 }
 
 /* but again, submenu items should stay in main color */
@@ -287,6 +310,9 @@ h6 a:visited {
 #navbar .menu-item a:hover,
 #navbar .sub-menu .menu-item a:hover {
     color : black;
+}
+#navbar #menu-item-38.menu-item a:hover {
+    opacity : 1;
 }
 
 /* }}} HOVER EFFECT */
