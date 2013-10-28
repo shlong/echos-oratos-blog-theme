@@ -253,14 +253,16 @@ h6 a:visited {
 /* {{{ FEED ICON */
 
 #navbar #menu-item-38 a {
-    padding-left : 20px;
-    padding-right : 20px;
-    font-size : 0px;
     display : block;
     background-image : url(images/feed-icon-nav.png);
     background-repeat : no-repeat;
     background-position : center center;
     transition : opacity 0.2s linear;
+
+    width : 20px;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /* }}} */
