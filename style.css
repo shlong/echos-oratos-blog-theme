@@ -368,6 +368,7 @@ h6 a:visited {
 
 /* reposition read-moar link */
 #content article .entry-content a.more-link {
+    font-size : 13px;
     margin-top : 20px;
     float : right;
 }
@@ -382,6 +383,8 @@ h6 a:visited {
 /* {{{ FOOTER */
 
 #content footer.entry-meta {
+
+    font-size : 13px;
 
     /* adjustments for moar-link */
     margin-top : 30px;
@@ -491,7 +494,7 @@ h6 a:visited {
     float : right;
 }
 #colophon .credits {
-    font-size : 12px;
+    font-size : 13px;
     color : #808080;
     margin : 8px 0;
 }
