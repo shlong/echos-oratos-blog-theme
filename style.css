@@ -663,7 +663,7 @@ h6 a:visited {
 /* }}} */
 /* {{{ CONTACT FORM STYLING */
 
-#wpcf7-f16-p14-o1 input.wpcf7-submit {
+.submit-wrap.right input.wpcf7-submit {
     float : right;
 }
 
@@ -674,13 +674,11 @@ h6 a:visited {
     clear : both;
 }
 
-#wpcf7-f18-p153-o1 .input-wrap,
-#wpcf7-f18-p14-o2 .input-wrap {
+.integrate.input-wrap {
     width : 470px;
     float : left;
 }
-#wpcf7-f18-p153-o1 .submit-wrap,
-#wpcf7-f18-p14-o2 .submit-wrap {
+.integrate.submit-wrap {
     float : right;
 }
 
