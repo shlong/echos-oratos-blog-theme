@@ -341,6 +341,10 @@ h6 a:visited {
 #content header.entry-header h1 {
     padding : 0 10px;
 }
+#content header.entry-header h1,
+#content header.entry-header h1 a {
+    font-size : 24px;
+}
 
 /* }}} HEADERS */
 /* {{{ CONTENT */
