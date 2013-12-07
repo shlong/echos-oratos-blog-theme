@@ -206,6 +206,10 @@ h6 a:visited {
     font-weight : normal;
 }
 
+img {
+    border : 0;
+}
+
 #navbar {
     border : 3px solid black;
     border-width : 3px 0;
