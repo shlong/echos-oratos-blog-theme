@@ -379,6 +379,11 @@ h6 a:visited {
     height : auto;
 }
 
+/* remove 3-5px margin-bottom for images */
+#content article a img {
+    vertical-align : top;
+}
+
 /* }}} */
 /* {{{ FOOTER */
 
